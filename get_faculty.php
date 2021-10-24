@@ -9,6 +9,7 @@ $data->execute();
 
 while($output = $data->fetch(PDO::FETCH_ASSOC)){
     $faculty[$output['id']] = array(
+        'id' => $output['id'] , 
         'name' => $output['name']
     );
 }
